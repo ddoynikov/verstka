@@ -595,10 +595,10 @@ h5 {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.contacts__title{
+.page__title{
     margin-top: 120px;
 }
-.contacts__descriptor{
+.page__descriptor{
     width: 770px;
     text-align: center;
     margin: 0 auto;
@@ -888,9 +888,13 @@ h5 {
 
 .content {
     padding-top: 60px;
+    padding-bottom: 120px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.content__post{
+    font-size: 18px;
 }
 .content__title{
     font-weight: 400;
