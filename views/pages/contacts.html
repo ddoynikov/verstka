@@ -1,0 +1,85 @@
+@@include("../../blocks/modules/header/header-2.html")
+
+        <h1 class="contacts__title">Контакты</h1>
+        <p class="contacts__descriptor">
+            У вас есть вопросы или предложения?
+            Вас мучают интересные мысли и свежие идеи? возникли проблемы?
+            Мы рады пообщаться в любой ситуации!
+        </p>
+
+    </header>
+    <div class="contacts__main container">
+        <div class="contacts__left">
+            <div class="write">
+                <h3 class="contacts__subtitle">
+                    Пишите нам, если
+                </h3> 
+                <ul>
+                    <li class="write__items">
+                        <img src="/img/icons/options.png" alt="">
+                        <p class="write__descriptor">
+                            у вас есть вопросы по использованию возможностей нашего продукта
+                        </p>
+                    </li>
+                    <li class="write__items">
+                        <img src="/img/icons/qst.png" alt="">
+                        <p class="write__descriptor">
+                            нужна помощь с регистрацией на курсы
+                        </p>
+                    </li>
+                    <li class="write__items">
+                        <img src="/img/icons/idea.png" alt="">
+                        <p class="write__descriptor">
+                            у вас есть идеи по улучшению нашего
+                            проекта
+                        </p>
+                    </li>
+                </ul>
+                <h3 class="contacts__subtitle">
+                    Свяжитесь
+                </h3>
+                <ul>
+                    <li class="write__items">
+                        <img src="/img/icons/phone.png" alt="">
+                        <p class="write__descriptor">
+                            +7-962-727-2792
+                        </p>
+                    </li>
+                    <li class="write__items">
+                        <img src="/img/icons/telegram.png" alt="">
+                        <p class="write__descriptor">
+                            @ddoynikov
+                        </p>
+                    </li>
+                    <li class="write__items">
+                        <img src="/img/icons/email.png" alt="">
+                        <p class="write__descriptor">
+                            hello@planedone.org
+                        </p>
+                    </li>
+                </ul>
+                <h3 class="contacts__subtitle">
+                    Юридическая информация
+                </h3>
+                    <p class="write__descriptor">
+                        ИНН: 3365865015605
+                    </p>
+            </div>
+        </div>
+        <div class="contacts__right">
+            <div class="contacts__wrapper">
+                <h4>
+                    Мы открыты к общению и готовы ответить на все ваши вопросы
+                </h4>
+                <form class="contacts__form" action="contact-form.php" method="post">
+                    <input name="name" id="name" type="name" placeholder="Имя" class="contacts__input" required>
+                    <input name="email" id="email" type="email" placeholder="Email" class="contacts__input" required>
+                    <input name="tel" id="tel" type="tel" placeholder="Телефон" class="contacts__input">
+                    <input name="text" id="text" type="text" placeholder="Ваш вопрос" class="contacts__input" required>
+                    <button type="submit" class="contacts__btn act">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    @@include("../../blocks/modules/footer/footer.html")
+        
