@@ -1,6 +1,7 @@
 @@include("../blocks/modules/header/header.html")
 
-        <div class="content__main">
+
+<div class="content__main">
             <div class="content__left">
                 <h1 class="header__offer">
                     Обучение системному маркетингу
@@ -21,10 +22,17 @@
         <div class="content__right">
             <div class="content__bg">
                 <div class="geometric__wrapper">
-                    <img src="img/header-bg/geometric.png" alt="Geometric" class="geometric__img">
+            <!-- Polygon -->
+            <div id="scene">
+                <div data-depth="0.2"><img src="/img/header-bg/circle.png" alt=""></div>
+                <div data-depth="0.6"><img src="/img/header-bg/cylinder.png" alt=""></div>
+              </div>
+
+            <!-- End Polygon -->
                 </div>
             </div>
         </div>
+ 
         <div class="rtb">
             <div class="rtb__item">
                 <img src="img/icons/rocket.webp" alt="Start" class="rtb__img">
@@ -243,6 +251,25 @@
         </div>
     </section>
 
+    <script>	
+            var scene = document.getElementById('scene');
+            var parallax = new Parallax(scene);
+            if(document.documentElement.clientWidth > 1100) {var show = true;var countbox = "#counts";$(window).on("scroll load resize", function(){if(!show) return false;var w_top = $(window).scrollTop();var e_top = $(countbox).offset().top;var w_height = $(window).height();var d_height = $(document).height();var e_height = $(countbox).outerHeight();if(w_top + 750 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height){$(".spin-main").spincrement({thousandSeparator: "",duration: 2000});show = false;}});}
+        </script>
+        <script>
+        $('.swiper-slide').click(function() {
+            var num = $(this).attr('class').split('_').pop();
+            $.get('/'+$(this).data("url"), function (data) {  
+                $('body').append( $('<div class="review" data-remodal-id="remodal_'+num+'" data-remodal-options="hashTracking: false">'+data+'</div>'));
+            });
+            setTimeout(function(){ $('[data-remodal-id=remodal_'+num+']').remodal().open();},1000);
+            setTimeout(function(){ 
+                $('.review__icon').html('<svg width="24" height="22"><use xlink:href="#starship"/></svg>');
+                $('.linked').html('<svg width="13" height="13"><use xlink:href="#linked"/></svg>');
+                $('.remodal-close').html('<svg><use xlink:href="#close"/></svg>');
+            },1000);
+        });
+        </script>
 
     @@include("../blocks/modules/footer/footer.html")   
 
