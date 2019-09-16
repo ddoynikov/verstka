@@ -1,6 +1,5 @@
 import "./import/modules";
 import "./import/slick";
-import "./import/parallax";
 import $ from "jquery";
 
 
@@ -15,7 +14,6 @@ import $ from "jquery";
 }); 
 
 //Паралакс
-
 var scene = document.getElementById('scene');
 var parallaxInstance = new Parallax(scene, {
   relativeInput: true

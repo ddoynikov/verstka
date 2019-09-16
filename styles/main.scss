@@ -278,85 +278,21 @@ h5 {
     right: 0%;
     z-index: 1;
 }
-/*Polygon*/
-
-	
-.polygon li{
+    /*Parallax*/
+.geometric__wrapper{
+    position: absolute;
+    top: 30%;
+    left: 50%;
 }
-
-	#c1{
-        width: 200px;
-        height: 183px;
-        position: absolute;
-        top: 50%;
-        right: 0%;
-    }	
-	#c2{
-		width: 188px;
-        height: 191px;
-        transform: rotate(80deg);
-        position: absolute;
-        top: 0%;
-        right: 0%;
-    }
-	#c3{
-		width: 70%;
-		height: 70%;
-	}
-	#c4{
-		width: 60%;
-        height: 60%;
-        }
-	#c5{
-		width: 50%;
-        height: 50%;
-        }
-	#c6{
-		width: 40%;
-		height: 40%;
-	}
-	#c7{
-		width: 30%;
-		height: 30%;
-	}
-	#c8{
-		width: 20%;
-        height: 20%;
-        }
-    #c9{
-        width: 120px;
-        height: 120px;
+    .gm-1{
         
-    }	
-    #c10{
-        width: 120px;
-        height: 120px;
     }
-    #c11{
-        width: 70%;
-        height: 70%;
+    .gm-2{
+        margin-left: -380px;
+        margin-top: 150px;
     }
-    #c12{
-        width: 60%;
-        height: 60%;
-        }
-    #c13{
-        width: 50%;
-        height: 50%;
-        }
-    #c14{
-        width: 40%;
-        height: 40%;
-    }
-    #c15{
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: 0%;
-        right: 0%;
 
-    }
-        /* End Polygon*/
+    /* End Parallax*/
 .rtb{
     display: flex;
     justify-content: flex-start;
