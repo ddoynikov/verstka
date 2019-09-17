@@ -24,21 +24,24 @@
                 <div class="geometric__wrapper">
             <!-- Parallax -->
             <div id="scene">
-                <div class="gm-1" data-depth="0.2"><img src="/img/header-bg/circle.png" alt=""></div>
+                
+                <div class="gm-1" data-depth="0.1"><img src="/img/header-bg/circle.png" alt=""></div>
+                <div class="bg-2" data-depth="0.03"><img src="/img/header-bg/bg-h2.png" alt=""></div>
+                <div class="bg-3" data-depth="0.06"><img src="/img/header-bg/bg-h3.png" alt=""></div>
                 <div class="gm-2" data-depth="0.2"><img src="/img/header-bg/circle-2.png" alt=""></div>
-                <!-- <div class="gm-3" data-depth="0.2"><img src="/img/header-bg/cylinder.png" alt=""></div>
-                <div class="gm-4" data-depth="0.2"><img src="/img/header-bg/cylinder.png" alt=""></div>
-                <div class="gm-5" data-depth="0.2"><img src="/img/header-bg/cylinder.png" alt=""></div>
-                <div class="gm-6" data-depth="0.2"><img src="/img/header-bg/line.png" alt=""></div>
-                <div class="gm-7" data-depth="0.2"><img src="/img/header-bg/line.png" alt=""></div>
-                <div class="gm-8" data-depth="0.2"><img src="/img/header-bg/squer.png" alt=""></div>
-                <div class="gm-9" data-depth="0.2"><img src="/img/header-bg/squer_hole.png" alt=""></div>
-                <div class="gm-10" data-depth="0.2"><img src="/img/header-bg/squer_hole2.png" alt=""></div>
-                <div class="gm-11" data-depth="0.2"><img src="/img/header-bg/squer_hole2.png" alt=""></div>
-                <div class="gm-12" data-depth="0.2"><img src="/img/header-bg/triangle.png" alt=""></div>
-                <div class="gm-13" data-depth="0.2"><img src="/img/header-bg/triangle.png" alt=""></div>
-                <div class="gm-14" data-depth="0.2"><img src="/img/header-bg/triangle.png" alt=""></div>
-                <div class="gm-15" data-depth="0.2"><img src="/img/header-bg/triangle2.png" alt=""></div> -->
+                <div class="gm-3" data-depth="0.15"><img src="/img/header-bg/cylinder.png" alt=""></div>
+                <div class="gm-4" data-depth="0.05"><img src="/img/header-bg/cylinder-2.png" alt=""></div>
+                <div class="gm-5" data-depth="0.3"><img src="/img/header-bg/cylinder-2.png" alt=""></div>
+                <div class="gm-6" data-depth="0.25"><img src="/img/header-bg/line.png" alt=""></div>
+                <div class="gm-7" data-depth="0.07"><img src="/img/header-bg/line.png" alt=""></div>
+                <div class="gm-8" data-depth="0.22"><img src="/img/header-bg/squer.png" alt=""></div>
+                <div class="gm-9" data-depth="0.26"><img src="/img/header-bg/squer_hole.png" alt=""></div>
+                <div class="gm-10" data-depth="0.09"><img src="/img/header-bg/squer_hole2.png" alt=""></div>
+                <div class="gm-11" data-depth="0.07"><img src="/img/header-bg/squer_hole2b.png" alt=""></div>
+                <div class="gm-12" data-depth="0.12"><img src="/img/header-bg/triangle.png" alt=""></div>
+                <div class="gm-13" data-depth="0.24"><img src="/img/header-bg/triangle.png" alt=""></div>
+                <div class="gm-14" data-depth="0.1"><img src="/img/header-bg/triangle2.png" alt=""></div>
+                <div class="gm-15" data-depth="0.35"><img src="/img/header-bg/triangle3.png" alt=""></div>
               </div>
 
             <!-- End Parallax -->
@@ -263,26 +266,6 @@
             </div>
         </div>
     </section>
-
-    <script>	
-            var scene = document.getElementById('scene');
-            var parallax = new Parallax(scene);
-            if(document.documentElement.clientWidth > 1100) {var show = true;var countbox = "#counts";$(window).on("scroll load resize", function(){if(!show) return false;var w_top = $(window).scrollTop();var e_top = $(countbox).offset().top;var w_height = $(window).height();var d_height = $(document).height();var e_height = $(countbox).outerHeight();if(w_top + 750 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height){$(".spin-main").spincrement({thousandSeparator: "",duration: 2000});show = false;}});}
-        </script>
-        <script>
-        $('.swiper-slide').click(function() {
-            var num = $(this).attr('class').split('_').pop();
-            $.get('/'+$(this).data("url"), function (data) {  
-                $('body').append( $('<div class="review" data-remodal-id="remodal_'+num+'" data-remodal-options="hashTracking: false">'+data+'</div>'));
-            });
-            setTimeout(function(){ $('[data-remodal-id=remodal_'+num+']').remodal().open();},1000);
-            setTimeout(function(){ 
-                $('.review__icon').html('<svg width="24" height="22"><use xlink:href="#starship"/></svg>');
-                $('.linked').html('<svg width="13" height="13"><use xlink:href="#linked"/></svg>');
-                $('.remodal-close').html('<svg><use xlink:href="#close"/></svg>');
-            },1000);
-        });
-        </script>
 
     @@include("../blocks/modules/footer/footer.html")   
 
