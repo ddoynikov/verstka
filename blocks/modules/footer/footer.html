@@ -34,9 +34,9 @@
                 Разрешите нам присылать вам уведомления о новых эффективных материалах
             </p>
             <form class="footer__form" action="contact-form.php" method="post">
-                <input name="email" id="email" type="text" placeholder="Введите ваш Email" class="order__input"
-                    required>
-                <button type="submit" class="footer__btn act">›</button>
+                <input id='input-email' class="order__input input-email" name="email" id="email" type="text" placeholder="Введите ваш Email" 
+                    required>                
+                <button id='buttonLogin' type="submit" class="footer__btn act">›</button>
             </form>
             <p class="footer__media">
                 <img src="/img/icons/" alt=""> Обещаем никакого спама!
@@ -67,7 +67,9 @@
             <a href="#" class="problem">Сообщить о проблеме</a>
         </div>
     </div>
-    <div id="top">›</div>
+    <div id="top" class="totop">
+        <div class="totop__arrow"></div>   
+    </div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script src="../js/main.js"></script>

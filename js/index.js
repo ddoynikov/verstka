@@ -12,7 +12,7 @@ import $ from "jquery";
     nextArrow: '<div class="slick-next">›</div>'
 
 }); 
-
+//Плавная прокрутка
 var $page = $('html, body');
 $('a[href*="#"]').click(function() {
     $page.animate({
@@ -21,8 +21,37 @@ $('a[href*="#"]').click(function() {
     return false;
 });
 
-//Паралакс
+//Скролл наверх
+
+    var btn = $('#top');
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+    btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, '2000');
+    });
+    var btn = $('#top');
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+//Паралакс в header
 var scene = document.getElementById('scene');
 var parallaxInstance = new Parallax(scene, {
   relativeInput: true
 });
+
+//Скрытие формы в футере
