@@ -4,12 +4,62 @@
     }
 }
 @media screen and (max-width: 1700px) {
-    .gm-15 img{
+    .gm-2 img,
+    .gm-3 img,
+    .gm-4 img,
+    .gm-5 img,
+    .gm-6 img,
+    .gm-7 img,
+    .gm-8 img,
+    .gm-9 img,
+    .gm-10 img,
+    .gm-11 img,
+    .gm-12 img,
+    .gm-13 img,
+    .gm-14 img,
+    .gm-15 img
+    {
         width: 70%;
         height: 70%;
+        }
+    .gm-1 img {
+        width: 20%;
+        height: 20%;
+    } 
+    .gm-2 {
+        margin-left: -450px;
+        margin-top: 200px;
+    }
+    .gm-3 {
+        margin-left: -220px;
+        margin-top: 120px;
+    }
+    .gm-5 {
+        margin-left: -400px;
+        margin-top: 120px;
+    }
+    .gm-7 {
+        margin-left: -370px;
+        margin-top: -20px;
+    }
+    .gm-8 {
+        margin-left: -270px;
+        margin-top: 200px;
+    }
+    .gm-11 {
+        margin-left: -350px;
+        margin-top: -120px;
+    }
+    .gm-14 {
+        margin-left: -430px;
+        margin-top: 30px;
+    }
+    .gm-15 {
+        margin-left: -350px;
+        margin-top: 70px;
     }
 }
-/*    
+    
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
 
@@ -38,4 +88,4 @@
 /* Iphone 5 */
 @media (max-width: 320px) {
 
-} */
+} 

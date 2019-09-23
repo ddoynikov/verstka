@@ -324,8 +324,8 @@ h5 {
         margin-left: -130px;
         margin-top: 170px;
         & img{
-            width: 55px;
-            height: 57px;
+            width: 55px !important;
+            height: 57px !important;
         }
     }
     .gm-4{
@@ -365,7 +365,6 @@ h5 {
         }
     }
     .gm-8{
-        width: 76px;
         margin-left: -150px;
         margin-top: 250px;
         z-index: 3;
