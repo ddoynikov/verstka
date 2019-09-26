@@ -8,19 +8,17 @@
 
 /* Спецификация */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 15px;
     color: #151221;
     overflow-x: hidden;
-    margin: 0px;
-    padding: 0px;
     margin: 0 auto;
+    padding: 0;
     line-height: 1.45em;
 }
 p {
     color: #151221;
-
 }
 
 html {
@@ -32,24 +30,13 @@ html {
     margin: 0 auto !important;
 }
 
-ul,
-li {
+ul, li {
     display: block;
-    padding: 0px;
-    margin: 0px
+    margin: 0;
+    padding: 0;
 }
 
-a,
-a:hover,
-a:active,
-a:focus,
-button,
-input,
-button:hover,
-button:active,
-button:focus,
-input:active,
-input:focus {
+a, a:hover, a:active, a:focus, button, input, button:hover, button:active, button:focus, input:active, input:focus {
     text-decoration: none;
     outline: none;
     color: #fff;
@@ -66,6 +53,8 @@ h1 {
     font-size: 35px;
     font-weight: 700;
     text-align: center;
+    line-height: 1em;
+
 }
 h2 {
     font-family: 'Neo Sans Pro', serif;
@@ -277,8 +266,8 @@ h5 {
     width: 785px;
     height: 765px;
     position: absolute;
-    top: 0%;
-    right: 0%;
+    top: 0;
+    right: 0;
     z-index: 1;
 }
     /*Parallax*/
@@ -362,6 +351,8 @@ h5 {
     font-family: 'Neo Sans Pro',serif;
     font-weight: 700;
     color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 .internet__item{
     width: 370px;
