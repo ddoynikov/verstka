@@ -64,11 +64,28 @@
     .internet__item {
         width: 290px;
     }
+    .courses__item {
+        width: calc(100%/2 - 15px);
+    }
+    .slider__container{
+        width: 90%;
+    }
+    .slick-slide {
+        width: calc(100%/3 - 10px);
+    }
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-
+    .container {
+        width: 90%;
+    }
+    .logo-main {
+        width: 80px;
+    }
+    .menu__item a {
+        font-size: 13px;
+    }
 }
 
 /* Landscape phones and portrait tablets */

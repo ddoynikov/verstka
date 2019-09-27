@@ -9,8 +9,15 @@ import $ from "jquery";
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: '<div class="slick-prev">‹</div>',
-    nextArrow: '<div class="slick-next">›</div>'
-
+    nextArrow: '<div class="slick-next">›</div>',
+    responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }
+        ] 
 }); 
 //Плавная прокрутка
 var $page = $('html, body');
@@ -54,4 +61,18 @@ var parallaxInstance = new Parallax(scene, {
   relativeInput: true
 });
 
-//Скрытие формы в футере
+//Гамбургер
+
+$(document).ready(function() {
+    $(document).delegate('.open', 'click', function(event){
+        $(this).addClass('oppenned');
+        event.stopPropagation();
+    })
+    $(document).delegate('body', 'click', function(event) {
+        $('.open').removeClass('oppenned');
+    })
+    $(document).delegate('.cls', 'click', function(event){
+        $('.open').removeClass('oppenned');
+        event.stopPropagation();
+    });
+});
