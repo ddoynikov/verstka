@@ -16,6 +16,18 @@ import $ from "jquery";
                 settings: {
                     slidesToShow: 3,
                 }
+            },
+            {
+                breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
+                }
             }
         ] 
 }); 
@@ -63,15 +75,15 @@ var parallaxInstance = new Parallax(scene, {
 
 //Гамбургер
 
-$(document).ready(function() {
-    $(document).delegate('.open', 'click', function(event){
+$(document).ready(function () {
+    $(document).delegate('.open', 'click', function (event) {
         $(this).addClass('oppenned');
         event.stopPropagation();
     })
-    $(document).delegate('body', 'click', function(event) {
+    $(document).delegate('body', 'click', function (event) {
         $('.open').removeClass('oppenned');
     })
-    $(document).delegate('.cls', 'click', function(event){
+    $(document).delegate('.cls', 'click', function (event) {
         $('.open').removeClass('oppenned');
         event.stopPropagation();
     });
