@@ -6,15 +6,20 @@
 }
 @media screen and (max-width: 1700px) {
     .content__bg {
-        background: none;
-        right: -15%;
+        z-index: 1;
+        top: -10%;
+        right: -30%;
     }
     .gm-1 img, .gm-2 img, .gm-3 img, .gm-4 img {
         width: 70%;
         height: 70%;
     }
     .bg-2 img {
-        display: none;
+        margin-left: -30px;
+        margin-top: 65px;
+        width: 50%;
+        height: 50%;
+        
     }
     .bg-3 img {
         margin-left: -50px;
@@ -51,9 +56,7 @@
         width: 90%;
     }
     .content__bg {
-        z-index: 1;
-        top: -10%;
-        right: -30%;
+        background: none;
     }
     .header__item{
         z-index: 10;
@@ -78,6 +81,21 @@
     .slick-prev {
         top: 25%;
     }
+    .contacts__main{
+        justify-content: center;
+    }
+    .write {
+        width: 400px;
+    }
+    .contacts__wrapper{
+        width: 400px;
+        margin-left: 30px;
+
+    }
+    .post__important_img{
+        
+    }
+    
 }
 
 /* Portrait tablets and small desktops */
@@ -119,7 +137,7 @@
 
     /* Геометрия */
     .content__bg {
-        width: calc(100% / 12 * 4 - 200px);
+        width: calc(100% / 12 * 4 - 80px);
         top: -10%;
     }
     .gm-1 img,
@@ -131,7 +149,8 @@
     }
 
     .bg-2 img {
-        display: none;
+        width: 40%;
+        height: 40%;
     }
 
     .bg-3 img {
@@ -165,10 +184,6 @@
     }
 
     /* Гамбургер */
-
-.content__left {
-;
-}
 
     .hamburger-menu {
         z-index: 10;
@@ -222,7 +237,7 @@
         top: 0;
         right: -100%;
         width: 300px;
-        height: 50%;
+        height: 100vh;
         margin: 0;
         padding: 80px 0;
         list-style: none;
@@ -333,6 +348,19 @@
         width: 80%;
         min-width: 250px;
         text-align: center;
+        margin-bottom: 60px;
+    }
+    .contacts__main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .write {
+        width: 95%;
+    }
+    .write__descriptor {
+        width: 95%;
+    }
+    .contacts__wrapper{
         margin-bottom: 60px;
     }
 }
