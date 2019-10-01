@@ -90,12 +90,7 @@
     .contacts__wrapper{
         width: 400px;
         margin-left: 30px;
-
-    }
-    .post__important_img{
-        
-    }
-    
+    }   
 }
 
 /* Portrait tablets and small desktops */
@@ -218,6 +213,11 @@
         height: 3px;
         background-color: #6541b5;
     }
+    .menu__btn-wh>span,
+    .menu__btn-wh>span::before,
+    .menu__btn-wh>span::after {
+        background-color: #fff;
+    }
 
     .menu__btn>span::before {
         content: '';
@@ -245,7 +245,12 @@
         background-color: #ECEFF1;
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     }
-
+    .menu__box-wh {
+        background-color: #ECEFF1;
+    }
+    .menu__box-wh {
+        background-color: #6541b5;
+    }
     /* элементы меню */
     .menu__item {
         display: block;
@@ -267,6 +272,12 @@
             border-radius: 0;
             border: none;
         }
+    }
+    .menu__item a {
+        color: #6541b5;
+    }
+    .menu__item_inblog a{
+        color: #fff;
     }
 
     .menu__item:hover {
@@ -363,6 +374,21 @@
     .contacts__wrapper{
         margin-bottom: 60px;
     }
+    .blog-page__sidbar {
+        display: none;
+    }
+    .blog-page{
+        display: flex;
+        justify-content: center;
+        width: 95%;
+    }
+    .blog-page__sidbar,
+    .blog-page__articles {
+        flex-basis: auto;
+    }
+    .content {
+        justify-content: center;
+    }
 }
 
 /* Landscape phones and portrait tablets */
@@ -421,8 +447,7 @@
         margin-top: 30px;
         margin-bottom: 15px;
     }
-    .footer__btn {
-        
+    .footer__btn { 
         left: 53%;
         top: 0%;
         margin-top: 8px;
@@ -435,6 +460,24 @@
             font-size: 22px;
             transition: 0.5s;
         }
+    }
+    .post__content {
+        display: none;
+    }
+    .post {
+        flex-direction: column;
+    }
+    .post__img {
+        width: 100%;
+        border-radius: 10px;
+        flex-basis: auto;
+        z-index: 3;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .post__wrapper {
+        z-index: 2;
+        flex-basis: auto;
     }
 }
 
@@ -451,8 +494,11 @@
         padding: 15px 15px;
         border-radius: 27px;
         margin-left: 10px;
+    }
+    .post__img {
 
     }
+    
 }
 
 /* Iphone 5 */
