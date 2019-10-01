@@ -88,3 +88,8 @@ $(document).ready(function () {
         event.stopPropagation();
     });
 });
+
+$('#buttonLogin').on('click', function () {
+    $('#email').removeClass('.show');
+    $(this).addClass('.hide');
+});
