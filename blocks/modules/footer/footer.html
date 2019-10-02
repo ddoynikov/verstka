@@ -34,9 +34,11 @@
                 Разрешите нам присылать вам уведомления о новых эффективных материалах
             </p>
             <form class="footer__form" action="contact-form.php" method="post">
-                <input id='input-email email' class="order__input input-email show" name="email" type="text" placeholder="Введите ваш Email" 
+                <input id='input-email' class="order__input input-email" name="email" type="text" placeholder="Введите ваш Email" 
+                    required>   
+                <input id='input-name' class="order__input input-name hide" name="name" type="text" placeholder="Введите ваше имя" 
                     required>
-                <button id='buttonLogin' type="submit" class="footer__btn act">›</button>
+                <button id='buttonLogin' type="submit" class="footer__btn act">›</button> 
             </form>
             <p class="footer__media">
                 <img src="/img/icons/lock.png" alt=""> Обещаем никакого спама!

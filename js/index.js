@@ -89,7 +89,9 @@ $(document).ready(function () {
     });
 });
 
-$('#buttonLogin').on('click', function () {
-    $('#email').removeClass('.show');
-    $(this).addClass('.hide');
-});
+
+$("#buttonLogin").click(function(e) {
+    e.preventDefault();
+    $("#input-email").addClass('hide');
+    $("#input-name").removeClass('hide');
+  });
