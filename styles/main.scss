@@ -246,11 +246,11 @@ h5 {
   height: 36px;
   margin-top: -18px;
   background: rgba(0, 0, 0, .2);
-  transition: 0.6s;
+  transition: all 0.6s ease;
 }
 .button__item_link:hover {
     box-shadow: inset 0 14px 43px rgba(84, 53, 171, .2);
-    transition: 0.6s;
+    transition: all 0.6s ease;
 }
 
 /* Header Right */
@@ -274,7 +274,7 @@ h5 {
     width: 500px;
     height: 500px;
 }
-    .bg-2{
+    .bg-2 {
         margin-left: -380px;
         margin-top: -50px;
         & img {
@@ -282,7 +282,7 @@ h5 {
             height: 522px;
         }
     }
-    .bg-3{
+    .bg-3 {
         width: 519px;
         margin-left: -350px;
         margin-top: 50px;
@@ -291,27 +291,27 @@ h5 {
             height: 442px;
         }
     }
-    .gm-1{
+    .gm-1 {
         margin-top: -80px;
         margin-left: -430px;
         z-index: 3;
     }
-    .gm-2{
+    .gm-2 {
         margin-top: 30px;
         margin-left: -350px;
         z-index: 2;
     }
-    .gm-3{
+    .gm-3 {
         margin-top: -50px;
         margin-left: -320px;
         z-index: 1;
     }
-    .gm-4{
+    .gm-4 {
         margin-left: -450px;
         margin-top: 150px;
     }
     /* End Parallax*/
-.rtb{
+.rtb {
     display: flex;
     justify-content: flex-start;
     margin-top: 100px;
@@ -1004,7 +1004,7 @@ h5 {
     text-align: left;
     font-weight: 600;
 }
-
+/* Трейд Маркетинг Лендинг */
 .course-1__header-offer2{
     color: #fff;
     font-size: 30px;
@@ -1012,11 +1012,172 @@ h5 {
     font-weight: 600;
     margin-top: 10px;
 }
+.content__main{
+    margin-top: 20%;
+}
 .course-1__content-left{
     width: 500px;
-    margin-top: 180px;
     padding-bottom: 20px;
 }
 .course-1__header-descriptor {
     color: #fff;
+}
+.button__theme_header{
+    margin-top: 46px;
+}
+.button__color_fff {
+   background: #fff;
+   color: #492b9e;
+
+}
+.button__color_fff::after{
+    background: #492b9e;
+    
+}
+.button__color_fff:hover::after {
+    background: #492b9e;
+    transition: all 0.6s ease;
+  }
+  .button__color_fff:hover {
+      color: #492b9e;
+      box-shadow: inset 0 14px 43px rgba(84, 53, 171, .2);
+      transition: all 0.6s ease;
+  }
+  .content__bg-course-1 {
+    width: 785px;
+    height: 765px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+}
+.lq-1{
+    margin-left: -400px;
+    margin-top: 0px;
+    z-index: 1;
+    & img {
+        width: 94px;
+        height: 99px;
+    }
+}
+.lq-2{
+    margin-left: 100px;
+    margin-top: 450px;
+    z-index: 1;
+    & img {
+        width: 105px;
+        height: 92px;
+    }
+}
+.lq-3{
+    margin-left: -450px;
+    margin-top: 350px;
+    z-index: 2;
+    & img {
+        width: 430px;
+        height: 406px;
+        z-index: 20;
+    }
+}
+.lq-4{
+    margin-left: -370px;
+    margin-top: -20px;
+    z-index: 6;
+    & img {
+        width: 670px;
+        height: 461px;
+    }
+}
+.lq-5{
+    margin-left: 0px;
+    margin-top: 0px;
+    z-index: 3;
+    & img {
+        width: 656px;
+        height: 452px;
+    }
+}
+.lq-6{
+    margin-left: -80px;
+    margin-top: -280px;
+    z-index: 1;
+    & img {
+        width: 502px;
+        height: 346px;
+    }
+}
+.tm-banner {
+    background: url(../img/course-1/liquid/tm-banner.png) center center /cover;
+    z-index: 10;
+    margin-left: -550px;
+    width: 571px;
+    height: 374px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.tm-text__wrapper {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tm-text__wrapper p {
+    color: #fff;
+    text-transform: uppercase;
+}
+.tm-text__descriptor {
+    margin-left: 50px;
+    margin-bottom: 10;
+    font-weight: 600;
+    font-size: 25px;
+}
+.tm-text__title {
+    font-size: 80px;
+    font-weight: 900;
+}
+.tm-text__sale_descriptor {
+    margin-bottom: 0;
+    font-weight: 100;
+    font-size: 20px;
+    margin-left: 160px;
+}
+.tm-text__sale {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 40px;
+    margin-left: 160px;
+}
+.example__wrapper {
+    margin-top: 50px;
+    width: 300px;
+    text-align: right;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    z-index: 20;
+    & p {
+        color: #fff;
+    }
+}
+.example__arrow{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 200px;
+    font-weight: 900;
+    font-size: 50px;
+    margin-right: -40px;
+    margin-top: -30px;
+    transform: rotate(-35deg);
+
+}
+.example__title {
+    font-size: 30px;
+    font-weight: 700;
+
+}
+.month {
+    position: relative;
+    background-color: #fff;
+    z-index: 20;
+    margin-top: 0;
+    padding-top: 120px;
 }
