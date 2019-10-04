@@ -225,7 +225,7 @@ h5 {
 }
 .button__item_link::after{
     content: '›';
-    font-weight: 500;
+    font-weight: 300;
     color: #fff;
     font-size: 20px;
     display: flex;
@@ -1004,7 +1004,53 @@ h5 {
     text-align: left;
     font-weight: 600;
 }
-/* Трейд Маркетинг Лендинг */
+/**
+* Трейд Маркетинг Лендинг 
+**/
+
+/* Спецификация Трейд-Маркетинг */
+
+    .course-1 h1 {
+        font-family: 'Ubuntu', sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 40px;
+        text-align: left;
+        font-weight: 600;
+    
+    }
+    .course-1 h2 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+        color: #151221;
+        text-align: center;
+    }
+    .course-1 h3 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 25px;
+        text-align: center;
+        font-weight: 600;
+        color: #151221;
+    }
+    
+    .course-1 h4 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        color: #151221;
+    }
+    
+    .course-1 h5 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        text-align: left;
+        font-weight: 600;
+        color: #151221;
+    }
+
+/* Header */
+
 .course-1__header-offer2{
     color: #fff;
     font-size: 30px;
@@ -1174,10 +1220,94 @@ h5 {
     font-weight: 700;
 
 }
+/**
+* Чего вы избежите за 1,5 месяца
+**/
 .month {
     position: relative;
     background-color: #fff;
     z-index: 20;
     margin-top: 0;
     padding-top: 120px;
+}
+.difficulties__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+.difficulties__item {
+    width: calc(100%/4 - 30px);
+    text-align: left;
+}
+.difficulties__title {
+    text-align: left;
+    margin-bottom: 30px;
+}
+.difficulties__circle {
+    font-weight: 700;
+    background: #8571ea;
+    color: #fff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     &::after {
+        content: '';
+        background-color: #8571ea;
+        position: absolute;
+        margin-left: 8%;
+        width: 310px;
+        height: 2px;
+        z-index: -1;
+     }
+}
+.patterns{
+    background: linear-gradient(to top, #d6daec, #f7f8fd);
+    padding-top: 120px;
+}
+.patterns__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.patterns__item {
+    width: calc(100%/2 - 30px);
+}
+#patterns__title {
+    text-align: left;
+    max-width: 540px;
+}
+.patterns__img{
+    max-width: 570px;    
+}
+.patterns__left {
+    align-self: flex-end;
+}
+.patterns__text {
+   max-width: 540px;
+   &::before {
+    content: '►';
+    color: #8571ea;
+    margin-right: 10px;
+    }
+}
+.patterns__btn{
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.program{
+    background: #f3f6fa;
+}
+.my-profit__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.program__title {
+    padding-top: 120px;
+    padding-bottom: 60px;
 }

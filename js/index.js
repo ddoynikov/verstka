@@ -1,6 +1,8 @@
 import "./import/modules";
 import "./import/slick";
+
 import $ from "jquery";
+import "./import/accordion";
 
 
 //main
@@ -97,3 +99,12 @@ $("#buttonLogin").click(function(e) {
     $("#input-email").addClass('hide');
     $("#input-name").removeClass('hide');
   });
+
+//Аккордеон
+    
+
+
+
+
+
+
