@@ -1,9 +1,6 @@
 import "./import/modules";
 import "./import/slick";
-
 import $ from "jquery";
-import "./import/accordion";
-
 
 //main
  $('.blog__wrapper').slick({
