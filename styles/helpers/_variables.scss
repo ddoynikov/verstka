@@ -61,7 +61,7 @@
     .header__item{
         z-index: 10;
     }
-    .menu__item a {
+    .header__menu a {
         margin-left: 10px;
         z-index: 10;
     }
@@ -104,7 +104,7 @@
     .logo-main {
         width: 80px;
     }
-    .menu__item a {
+    .header__menu a {
         font-size: 13px;
     }
    .menu__box {
@@ -252,14 +252,14 @@
         background-color: #6541b5;
     }
     /* элементы меню */
-    .menu__item {
+    .header__menu li {
         display: block;
         padding: 12px 24px;
         color: #333;
         font-weight: 500;
         text-decoration: none;
     }
-    .menu__item a {
+    .header__menu a {
         margin-left: 15px;
         padding: 15px;
         color: #6541b5;
@@ -273,14 +273,14 @@
             border: none;
         }
     }
-    .menu__item a {
+    .header__menu a {
         color: #6541b5;
     }
     .menu__item_inblog a{
         color: #fff;
     }
 
-    .menu__item:hover {
+    .header__menu li:hover {
         background-color: #CFD8DC;
     }
 
@@ -313,7 +313,7 @@
         transition-duration: .25s;
     }
 
-    .menu__item {
+    .header__menu li {
         transition-duration: .25s;
     }
    .internet__item{

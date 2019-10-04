@@ -113,7 +113,7 @@ h5 {
     padding-top: 30px;
 }
 
-.menu__item a {
+.header__menu a {
     margin-left: 15px;
     padding: 15px;
     color: #6541b5;
@@ -127,7 +127,7 @@ h5 {
     }
 }
 
-.menu__item:first-child {
+.header__menu li:first-child {
     margin-left: 0px;
 }
 .header__button{
@@ -187,7 +187,7 @@ h5 {
     }
 }
 
-.menu__item:first-child {
+.header__menu li:first-child {
     margin-left: 0px;
 }
 
