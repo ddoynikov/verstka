@@ -127,7 +127,12 @@ h5 {
         border: 3px solid #6541b5;
     }
 }
-
+.header-2 a {
+    color: #687188;
+    &:hover {
+        border: 3px solid #687188;
+    }
+}
 .header__menu li:first-child {
     margin-left: 0px;
 }
@@ -657,11 +662,14 @@ h5 {
     margin-top: 120px;
 }
 .page__descriptor{
-    width: 770px;
+    width: 80%;
     text-align: center;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 60px;
+    font-size: 18px;
+    color: #8b9099;
+    line-height: 1.5em;
 }
 .write {
     width: 100%;
@@ -765,42 +773,56 @@ h5 {
     width: 100%;
     flex-basis: 70%;
 }
+.blog-page__post-main {
+    width: 70%;
+    margin: 0 auto;
+}
 .post {
-    height: 270px;
     margin-bottom: 30px;
     display: flex;
-    justify-content: flex-start;
-    border-radius: 10px;
-    box-shadow: 0 2px 7px 0 rgba(10, 10, 10, .05),
-    3px 27px 54px -34px rgba(0, 0, 0, .47);
-        &:hover{
-            box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .07);
-            transition: all .6s ease;
-        }
-}
-.post__wrapper {
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: flex-start;
     align-content: flex-start;
-    padding: 5%;
     flex-basis: 70%;
 }
+.post-main {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.post__title {
+    text-align: left;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.2em;
+}
 .post__img{
-    background: url(../img/courses-img1.png) center center no-repeat;
     width: 100%;
     height: 100%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    flex-basis: 30%;
+    border-radius: 10px;
 }
-.post__meta{
-    font-size: 13px;
-    font-weight: 700;
-    color: #bdc4cf;
+.post-meta{
+    font-size: 15px;
+    text-align: left !important;
+    font-weight: 500;
+    color: #8b9099;
+    padding: 10px 0;
 }
-.post__content{
+.post-meta a {
+    color: #8b9099;
+    &:hover {
+        color: #6541b5;
+        transition: all .7S ease;
+    }
+}
+.post p {
     padding-top: 15px;
+    font-size: 18px;
+    color: #8b9099;
+    line-height: 1.5em;
 }
 .post__title, .post__meta, .post__content{
     margin: 0;
@@ -815,46 +837,42 @@ h5 {
 .post{
     cursor: pointer;
 }
-.post__main {
-    height: 300px;
-    background: url(../img/shop.jpg) no-repeat center center;
-    border-radius: 10px;
+.widget {
+    margin-bottom: 30px;
 }
-.post__main_img{
-    background: rgba(0, 0, 0, .7);
-    height: 300px;
+.widget-title{
+    margin-bottom: 15px;
+}
+.widget_text {
+    height: 240px;
     border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/shop.jpg);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-start;
-    
+    padding: 5%;
 }
-
-.post__main_title{
-    color: #fff;
-    margin-left: 30px;
+.widget-title, .textwidget {
+    text-align: left;
 }
-.post__main_descriptor{
+.widget_text h4,
+.widget_text div {
     color: #fff;
-    margin-left: 30px;
-    margin-bottom: 30px;
 }
 .post__important_title{
     text-align: left;
 }
-.post__important{
-    margin-top: 60px;
-}
-.post__important_wrapper{
-    margin-top: 30px;
+
+.widget_recent_entries a {
+    margin-top: 15px;
     height: 100px;
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
+    color: #151221;
     box-shadow: 0 2px 7px 0 rgba(10, 10, 10, .05),
     3px 27px 54px -34px rgba(0, 0, 0, .47);
-
     &:hover {
         box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .07)
     }
@@ -881,41 +899,67 @@ h5 {
     text-align: left;
     margin-top: 60px;
 }
-.tags__wrapper{
+.tagcloud {
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
+    & a {
+        background: #fff;
+        color: #151221;
+        font-weight: 500;
+        padding: 15px 30px;
+        border-radius: 25px;
+        margin: 0;
+        margin-right: 10px;
+        margin-top: 10px;
+        box-shadow: 0 2px 7px 0 rgba(10, 10, 10, .05);
+    }
+}
+.widget_categories ul {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    & li {
+        background: #fff;
+        color: #151221;
+        font-weight: 500;
+        padding: 15px 30px;
+        border-radius: 25px;
+        margin: 0;
+        margin-right: 10px;
+        margin-top: 10px;
+        box-shadow: 0 2px 7px 0 rgba(10, 10, 10, .1);
+    }
+    & a {
+        color: #151221;
+    }
+}
+.widget_categories li:hover {
+    box-shadow: inset 0 3px 10px 0 rgba(0, 0, 0, .05);
+
+}
+.tagcloud a:hover {
+        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .07);
+
+}
+#sidebar .tagcloud a {
+    font-size: 15px !important;
 }
 .widget{
     cursor: pointer;
 }
-.tags__link {
-    background: #fff;
-    color: #151221;
-    font-weight: 500;
-    padding: 15px 30px;
-    border-radius: 25px;
-    margin: 0;
-    margin-right: 10px;
-    margin-top: 10px;
-    box-shadow: 0 2px 7px 0 rgba(10, 10, 10, .05),
-    3px 27px 54px -34px rgba(0, 0, 0, .47);
 
-    &:hover {
-        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .07);
-        color: #7c4eb8; 
-        transition: 0.5s;
-    }
-}
 
 /* Pagination */
 
-.pagination__wrapper{
+.pagination ul,
+.nav-links {
     display: flex;
     justify-content: center;
     margin-bottom: 120px;
 }
-.page__number{
+.page-numbers {
     display: block;
     text-align: center;
     line-height: 44px;
@@ -925,26 +969,35 @@ h5 {
     margin-left: 15px;
      &:hover, :active{
         background-color: #fff;
-        box-shadow: 3px 3px 40px 0 rgba(9, 31, 67, .15);
+        box-shadow: 5px 5px 40px 0 rgba(9, 31, 67, .3);
      }       
 }
 
-.pagination a{
+.pagination a, 
+.pagination span {
        -webkit-transition: all .4s ease;
        transition: all .5s ease;
        color: #687188;
        font-weight: 700;
+       font-size: 15px;
        &:hover{
            color: #151221;
+           cursor: pointer;
        }
 }
-.pagination__item{
+.pagination li {
     display: flex;
     align-items: center;
 }
 .prev, .next {
-    font-size: 25px;
+    font-size: 40px !important;
     margin-top: 0px;
+}
+.pagination .current {
+    color: #6541b5;
+    font-size: 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px 40px 0 rgba(9, 31, 67, .3);
 }
 .next{
     margin-left: 15px;
