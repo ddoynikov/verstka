@@ -1,6 +1,8 @@
 import "./import/modules";
 import "./import/slick";
+import "./import/jquery-ui";
 import $ from "jquery";
+
 
 //main
  $('.blog__wrapper').slick({
@@ -99,7 +101,11 @@ $("#buttonLogin").click(function(e) {
 
 //Аккордеон
     
-
+$( function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "content"
+    });
+  } );
 
 
 
