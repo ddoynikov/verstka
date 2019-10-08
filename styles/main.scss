@@ -1378,18 +1378,30 @@ h5 {
     padding: 15px 30px;
     outline: none;
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin-top: 15px;
     box-shadow: 0 2px 7px 0 rgba(10, 10, 10, .05),
         3px 27px 54px -34px rgba(0, 0, 0, .47);
 }
-.ui-state-active {
-    border-radius: none;
+.ui-state-active,
+.ui-accordion-header-active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0px;
 }
-.ui-accordion-header {
-
+.ui-icon-circle-arrow-s {
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    
+    
+    width: 35px;
+    height: 35px;
 }
 .accordion__text {
     margin: 0;
     padding: 30px;
     background: #fff;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
