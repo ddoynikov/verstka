@@ -33,13 +33,18 @@ import $ from "jquery";
         ] 
 }); 
 //Плавная прокрутка
-var $page = $('html, body');
+
+/* 
+**Пересмотеть этот код, работает не правильно, табы портит
+ */
+ 
+/* var $page = $('html, body');
 $('a[href*="#"]').click(function() {
     $page.animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 1000);
     return false;
-});
+}); */
 
 //Скролл наверх
 
@@ -119,10 +124,20 @@ $(function() {
       }
     }); });
 
-    // Табы
+    // Табы в Программе курса
 
     $( function() {
-        $( "#tabs" ).tabs();
+        $( "#tabs-p" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+        $( "#tabs-p li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+      } );
+
+    // Табы в Who
+
+    $( function() {
+        $( "#tabs" ).tabs({
+            heightStyle: "content",
+            collapsible: true
+        });
       } );
 
 
