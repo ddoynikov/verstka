@@ -114,6 +114,7 @@ $(function() {
     $( "#accordion" ).accordion({
       icons: icons,
       heightStyle: "content",
+      collapsible: true,
       animate: 500
     });
     $( "#toggle" ).button().click(function() {

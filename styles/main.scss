@@ -92,7 +92,6 @@ h5 {
     color: #fff;
 }
 
-
 /* Header */
 .header{
     height: 100vh;
@@ -1608,7 +1607,9 @@ h5 {
     text-align: center;
 }
 .success h5 {
+    font-family: 'Ubuntu', sans-serif;
     text-align: center;
+    margin-top: 20px;
 }
 .success__title {
     margin-top: 120px;
@@ -1625,4 +1626,223 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.success__btn {
+    margin-top: 20;
+    margin-bottom: 120px;
+}
+
+/* Know */
+
+.know__title {
+    margin-bottom: 60px;
+}
+.know__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+}
+.know__item {
+    width: calc(100%/3 - 30px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.know__img {
+    margin-right: 10px;
+}
+
+/* Know */
+.learning {
+    background: linear-gradient(to top, #d6daec, #f7f8fd);
+}
+.learning__title {
+    padding-top: 120px;
+    margin-bottom: 60px;
+}
+.learning__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 120px;
+}
+.learning__item {
+    width: calc(100%/2 - 30px);
+}
+.learning__item h5 {
+    margin-bottom: 0;
+}
+.learning__text{
+    margin-top: 0;
+}
+
+/* Teacher */
+
+.teacher__wrapper {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+.teacher__item {
+    width: calc(100%/2 - 30px);
+}
+.teacher__item_about {
+    width: 350px;
+}
+.teacher__btn {
+    text-align: right;
+    margin-bottom: 0;
+}
+.teacher__item_name {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.teacher__item_desc {
+    margin-top: 0;
+}
+.teacher__item_title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.teacher__item_text {
+    margin-top: 0;
+}
+
+/* Can */
+
+.can__title {
+    margin-top: 110px;
+    margin-bottom: 60px;
+}
+.can__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.can__item {
+    width: calc(100%/2);
+}
+.can__item_title,
+.can__item_text {
+    margin-left: 30px;
+}
+.can__item_wrapper {
+    max-width: 570px;
+}
+.can__item_title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.can__item_text {
+    margin-top: 0;
+}
+
+/* GO */
+
+.go__wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+.go__item {
+    width: calc(100%/2);
+    &:first-child {
+        width: 510px;
+        padding-bottom: 120px;
+    }
+}
+.go .go__item_title {
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: left;
+    font-weight: 600;
+    margin-top: 120px;
+}
+.go__item_desc {
+    text-align: left;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.go__time {
+    font-weight: 600;
+}
+.go__price_price {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.go__price_sum {
+    font-size: 50px;
+    font-weight: 700;
+    color: #ea4068;
+}
+.go__price_discont span {
+    font-weight: 700;
+    font-size: 25px;
+    text-decoration: line-through;
+}
+.go__price_discont {
+    margin-bottom: 0;
+}
+.go__price_economy {
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.go__price_economy-2 {
+    margin-top: 0;
+}
+.go__item:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pay__desc {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.pay__qst {
+    color: #fff;
+    & a {
+        color: #ea4068;
+        text-decoration: underline;
+    }
+}
+/* Garanty */
+
+
+.garanty__wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.garanty__item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.garanty__title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+/* FAQ */
+.faq__title {
+    margin-top: 120px;
+    margin-bottom: 60px;
+}
+.faq__accordion {
+    margin-bottom: 120px;
 }
