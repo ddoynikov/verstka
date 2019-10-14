@@ -28,7 +28,7 @@
 
 #sidebar .link-list li a {
     border: none;
-    color: #838C95;
+    color: #838c95;
 }
 
 #sidebar .link-list li a:hover {
@@ -42,38 +42,38 @@
 }
 
 #sidebar .tagcloud a {
-    font: bold 12px/24px notosans-regular, sans-serif !important;
     display: inline-block;
-    float: left;
+    position: relative;
     margin: 0 0 12px 12px;
     padding: 6px 10px;
-    position: relative;
-    text-transform: uppercase;
-    background: #D3D9D9;
-    text-decoration: none;
-    letter-spacing: 1px;
-    color: #6D7E7E;
 
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    font: bold 12px/24px notosans-regular, sans-serif !important;
+    float: left;
+    text-transform: uppercase;
+    background: #d3d9d9;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #6d7e7e;
 
     border-radius: 3px;
 }
 
 #sidebar .tagcloud a:hover {
     color: #fff;
-    background: #11ABB0;
+    background: #11abb0;
 }
 
 /* Photostream */
 #sidebar .photostream {
-    list-style: none;
+    overflow: hidden;
     margin: 18px 0 24px -15px;
     padding: 0;
-    overflow: hidden;
+    list-style: none;
 }
 
 #sidebar .photostream li {
@@ -86,9 +86,9 @@
 #sidebar .photostream li a {}
 
 #sidebar .photostream li a img {
-    border-radius: 3px;
-    height: 54px;
     width: 54px;
+    height: 54px;
+    border-radius: 3px;
     vertical-align: bottom;
 }
 
@@ -99,26 +99,26 @@
 }
 
 #sidebar .widget .text-search {
-    padding-right: 40px;
-    border: none;
     width: 100%;
     min-width: 150px;
+    border: none;
+    padding-right: 40px;
 
     border-radius: 3px;
 }
 
 #sidebar .widget .submit-search {
-    background: url(../images/search-icon.png) no-repeat;
-    border: none;
-    cursor: pointer;
-    width: 18px;
-    height: 18px;
-    margin: 0;
-    padding: 0;
-
-    float: right;
     position: relative;
     top: -60px;
     right: 18px;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    border: none;
+    padding: 0;
+    background: url(../images/search-icon.png) no-repeat;
+    cursor: pointer;
+
+    float: right;
     /*display: none !important;*/
 }
