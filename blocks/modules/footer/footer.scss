@@ -31,8 +31,9 @@ footer {
     }
 }
 
-.footer__title {
+.footer__box .footer__items h5 {
     margin-bottom: 30px;
+    color: #fff;
 }
 
 .footer__menu li {
@@ -67,14 +68,13 @@ footer {
     height: 50px;
     border-radius: 25px;
     border: none;
-    position: relative;
-
+    max-width: 188px;
     &::placeholder {
         color: #fff;
     }
 }
 
-.foo__btn {
+#buttonLogin {
     background: #8571ea;
     border-radius: 50%;
     width: 34px;
@@ -93,6 +93,22 @@ footer {
         margin-top: 6px;
         font-size: 22px;
         transition: all .2s ease;
+        animation: pulse 2s infinite;
+        transition: all .3s ease;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        margin-top: -2px;
+        left: 50%;
+        margin-left: -4px;
+        width: 4px;
+        height: 4px;
+        border-width: 0 2px 2px 0;
+        border-style: solid;
+        transform: rotate(-45deg);
     }
 }
 
