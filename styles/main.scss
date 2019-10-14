@@ -1437,28 +1437,36 @@ h5 {
 }
 
 .program__item {
-    font-size: 20px;    
-    padding: 15px;
-    background: #fff;
-    overflow: hidden;
-    border-radius: 10px;  
-    margin-bottom: 15px;
-    margin-right: 30px;
-    outline: none;
+    padding-right: 15px;
+    margin-bottom: 10px;
         &:hover {
             background: rgba(133, 116, 234, .05);
             transition: all .5s ease;
         }
 }
+
 .program__item a {
-    color: #151221;
+    padding: 16px 48px 16px 24px;
+    position: relative;
+    font-size: 16px;
+    transition: all 0.2s cubic-bezier(.2,0,.3,1);
+    &::after {
+        content: '›';
+        position: absolute;
+        right: 20%;
+    }
 }
-
+.nav-prog a {
+    color: #687188;
+    padding: 1em 3em 1em 1.5em;
+    &:::before {
+        
+    }
+}
 .prog {
-    color: #151221;
-
+    font-size: 16px;
+    font-weight: 600;
 }
-
 .nav-prog {
     width: calc(100%/2);
 }
@@ -1489,7 +1497,6 @@ h5 {
     }
 }
 .nav-prog .ui-state-active {
-    background: #8571ea;
     transition: all .5s ease;
 }
 .nav-prog .ui-state-active a {
