@@ -505,3 +505,250 @@
 @media (max-width: 320px) {
 
 } 
+
+/* 
+** Course-1 (Трейд-Маркетинг)
+*/
+
+@media screen and (max-width: 1700px) {
+    .tm-banner {
+        margin-left: -45%;
+    }
+    .tm-example {
+        margin-left: -90%;
+    }
+    
+}
+@media screen and  (max-width: 1250px) {
+
+    .container {
+        width: 95%;
+    }
+        
+    }
+
+    @media screen and  (max-width: 1199px) {
+        #scene img {
+            width: 60%;
+            height: 60%;
+        }
+        #scene .lq-1 img {
+            width: 10%;
+        }
+        .content__bg-course-1 {
+            width: 50%;
+            height: 50%;
+        }
+        .tm-banner,
+        .tm-example {
+            display: none !important;
+        }
+        .lq-1{
+            margin-left: -300px;
+            margin-top: 0px;
+            z-index: 1;
+
+        }
+        .lq-2{
+            margin-left: 100px;
+            margin-top: 450px;
+            z-index: 1;
+
+        }
+        .lq-3{
+            margin-left: -350px;
+            margin-top: 350px;
+            z-index: 2;
+
+        }
+        .lq-4{
+            margin-left: -370px;
+            margin-top: 100px;
+            z-index: 6;
+
+        }
+        .lq-5{
+            margin-left: 0px;
+            margin-top: 0px;
+            z-index: 3;
+
+        }
+        .lq-6{
+            margin-left: -100px;
+            margin-top: -150px;
+            z-index: 1;
+        }
+        .difficulties__item h4 {
+            font-size: 18px;
+        }
+        .patterns img {
+            width: 100%;
+            height: 100%;
+        }
+        .can {
+            width: 95%;
+        }
+        .go__item:first-child {
+            text-align: right;
+            padding-right: 30px;
+        }
+        .go .go__item_title {
+            text-transform: uppercase;
+            font-size: 35px;
+            text-align: right;
+        }
+        .go__item_desc {
+            text-align: right;
+            font-size: 25px;
+        }
+    }
+    @media screen and  (min-width: 767px) and (max-width: 991px) {
+
+        #scene .lq-1 img {
+            width: 10%;
+        }
+        
+        .lq-1{
+            margin-left: -300px;
+            margin-top: 0px;
+            z-index: 1;
+
+        }
+        .lq-2{
+            margin-left: -500px;
+            margin-top: 450px;
+            z-index: 1;
+
+        }
+        .lq-3{
+            margin-left: -350px;
+            margin-top: 350px;
+            z-index: 2;
+
+        }
+        .lq-4{
+            margin-left: -200px;
+            margin-top: 150px;
+            z-index: 6;
+
+        }
+        .lq-5{
+            margin-left: 0px;
+            margin-top: 0px;
+            z-index: 3;
+
+        }
+        .lq-6{
+            margin-left: 0px;
+            margin-top: -150px;
+            z-index: 1;
+        }
+        .difficulties__wrapper {
+            flex-wrap: wrap;
+        }
+        .difficulties__item {
+            width: calc(100%/2 - 30px);
+        }
+        .patterns__left {
+            display: none;
+        }
+        .patterns__right {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .my-profit__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .my-profit__item {
+            width: calc(100%/2 - 10px);
+        }
+        .my-profit__text {
+            text-align: center;
+        }
+        .program__wrapper{
+            flex-direction: column;
+        }
+        .nav-prog {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .menu-prog__item {
+            font-size: 20px;    
+            margin-right: 5px;
+            width: calc(100%/4 - 10px);
+        }
+        .menu-prog__item a {
+            padding: .5em 2em .5em 1em;
+        }
+        .container {
+            width: 90%;
+        }
+        .need__num {
+            font-size: 100px;
+        }
+        .need__wrapper {
+            flex-wrap: wrap;
+        }
+        .need__item {
+            width: calc(100%/2 - 15px);
+        }
+        .success__wrapper {
+            flex-wrap: wrap;
+        }
+        .success__item {
+            width: calc(100%/2 - 15px);
+        }
+        .learning__wrapper {
+            flex-direction: column;
+        }
+        .learning__item {
+            width: 100%;
+        }
+        .teacher__wrapper {
+            flex-wrap: wrap;
+        }
+        .teacher__item {
+            width: 100%;
+        }
+        .can__wrapper {
+            flex-wrap: wrap;
+        }
+        .can__item {
+            width: 100%;
+        }
+        .can__item:first-child {
+            display: none;
+        }
+        .go__wrapper {
+            flex-wrap: wrap;
+        }
+        .go__item {
+            width: 100%;
+        }
+        .go__item {
+        }
+
+        .go__item:first-child {
+            text-align: center;
+            padding: 0;
+            margin: 0 auto;
+        }
+        .go .go__item_title {
+            text-align: center;
+        }
+        .go__item_desc {
+            text-align: center;
+            font-size: 25px;
+        }
+        .go__item:last-child {
+            padding: 60px 0;
+        }
+        .pay__btn {
+            margin: 0 auto;
+        }
+    }
